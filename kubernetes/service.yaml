@@ -3,10 +3,10 @@ kind: Service
 metadata:
   name: cache-demo-service
 spec:
-  ports:
-  - port: 8080
-    protocol: TCP
-    targetPort: 8080
-  selector:
-    app: cache-demo-deployment
   type: NodePort
+  selector:
+    app: cache-demo-deployment 
+  ports:
+   - nodePort: 30162
+     port: 8080
+     targetPort: 8080   
