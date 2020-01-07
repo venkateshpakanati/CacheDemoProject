@@ -7,6 +7,7 @@ spec:
   selector:
     app: cache-demo-deployment 
   ports:
-   - nodePort: 30162
+   - nodePort: 30161
      port: 8080
-     targetPort: 8080   
+     targetPort: 8080
+     protocol: TCP     
