@@ -3,7 +3,10 @@ package com.demo.domain.institution;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 
+import io.swagger.annotations.ApiModel;
+
 @Entity
+@ApiModel(description="All details about the Institution. ")
 public class Institution {
 	@Id
 	private int inst_id;

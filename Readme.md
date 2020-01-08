@@ -1,5 +1,27 @@
 # Getting Started
 
+
+### Guides
+The following illustrate how to use some features concretely:
+
+
+Start kubernetes pods using deployment.yaml, expose NodePort 30162 by running service.yaml.
+
+Database used is In memory H2 DB.
+
+Run application through postman tool
+API url is http://127.0.0.1:30162/institutions
+
+Documentation available under below swagger link
+http://localhost:30162/swagger-ui.html
+
+Use http://localhost:8080/actuator for metrics and health
+
+
+
+
+
+
 ### Reference Documentation
 For further reference, please consider the following sections:
 
@@ -7,11 +29,3 @@ For further reference, please consider the following sections:
 * [Spring Boot Maven Plugin Reference Guide](https://docs.spring.io/spring-boot/docs/2.2.2.RELEASE/maven-plugin/)
 * [Spring Boot DevTools](https://docs.spring.io/spring-boot/docs/2.2.2.RELEASE/reference/htmlsingle/#using-boot-devtools)
 * [Rest Repositories](https://docs.spring.io/spring-boot/docs/2.2.2.RELEASE/reference/htmlsingle/#howto-use-exposing-spring-data-repositories-rest-endpoint)
-
-### Guides
-The following guides illustrate how to use some features concretely:
-
-* [Accessing JPA Data with REST](https://spring.io/guides/gs/accessing-data-rest/)
-* [Accessing Neo4j Data with REST](https://spring.io/guides/gs/accessing-neo4j-data-rest/)
-* [Accessing MongoDB Data with REST](https://spring.io/guides/gs/accessing-mongodb-data-rest/)
-
