@@ -20,8 +20,7 @@ podTemplate(label: label, containers: [
       container('maven') {
        unstash "code-stash"
        sh "mvn --version"
-       sh "ping repo.maven.apache.org"
-       sh "ls -lta"
+       sh "mvn clean install"
       }
     }
    
