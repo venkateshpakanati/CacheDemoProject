@@ -20,7 +20,7 @@ podTemplate(label: label, containers: [
       container('maven') {
        unstash "code-stash"
        sh "mvn --version"
-       sh "mvn clean install"
+       sh "mvn clean compile"
       }
     }
    
