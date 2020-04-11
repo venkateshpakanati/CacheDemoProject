@@ -20,7 +20,7 @@ podTemplate(label: label, containers: [
       container('maven') {
        unstash "code-stash"
        sh "mvn --version"
-       sh "mvn clean package"
+       sh "ping google.com"
        sh "ls -lta"
       }
     }
